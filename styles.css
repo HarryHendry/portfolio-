@@ -44,6 +44,7 @@ padding: 0 5rem ;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--accent-coral);
 }
 
 .logo img {
@@ -71,6 +72,16 @@ padding: 0 5rem ;
     text-decoration: none;
     letter-spacing: 2px;
 }
+.navbar ul li a:hover {
+    padding: 1rem 2rem;
+    list-style-type: none;
+    color: var(--accent-coral);
+    text-decoration: none;
+    letter-spacing: 2px;
+    background-color: var(--accent-yellow);
+    color: var(--neutral-navy);
+    border-radius: 20px;
+}
 
 .portfolio-container {
     max-width: 1300px;
@@ -93,7 +104,7 @@ justify-content: center;
     color: var(--neutral-light);
      background: rgba(15, 26, 42, 0.6);
     transition: color 0.3s ease, border-color 0.3s ease;
-
+    border-radius: 10px;
 }
 
 /* sliding background */
@@ -166,24 +177,4 @@ hr {
 img {
     height: 100%;
     width: 100%;
-}
-
-/* 
-.card {
-    border: 3px solid var(--primary-blue);
-    max-width: 300px;
-    height: 400px;
-    background-color: var(--neutral-navy);
-    padding: 1rem;
-    color: var(--neutral-light);
-   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.card:hover {
-    border: 3px solid var(--accent-yellow);
-    max-width: 300px;
-    height: 400px;
-    background-color: var(--accent-yellow);
-    padding: 1rem;
-    color: var(--neutral-navy);
-   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
