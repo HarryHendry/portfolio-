@@ -1,21 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  /* Primary */
+
+  /* Primary 
   --primary-blue: #1E90FF;
 
-  /* Accents */
+  
   --accent-coral: #FF6F61;
   --accent-yellow: #F7D154;
 
-  /* Neutrals */
+
 
 --neutral-navy: #0F1A2A;
   --neutral-light: #E8F0F7;
+*/
+:root {
+  /* Primary */
+  --primary-gray: #2D2D2D;   /* dark gray for text and headers */
 
+  /* Accents */
+  --accent-blue: #4A90E2;    /* calm blue for links and highlights */
+  --accent-green: #50C878;   /* fresh emerald for subtle accents */
+
+  /* Neutrals */
+  --neutral-white: #FFFFFF;  /* clean background */
+  --neutral-light: #F5F5F5;  /* soft section backgrounds */
+}
 
  
-}
+
 
 
 * {
@@ -26,16 +38,16 @@
 }
 
 body {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-gray);
     font-family: "Work Sans", sans-serif;
-    background: url(/images/landscape.png);
+    
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 header {
 height: 100px;
-background-color: var(--neutral-navy);
+background-color: var(--accent-blue);
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -48,7 +60,7 @@ padding: 0 5rem ;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--accent-coral);
+    color: var(--neutral-light);
 }
 
 .logo img {
@@ -56,7 +68,7 @@ padding: 0 5rem ;
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    border: 3px solid var(--accent-coral);
+    border: 3px solid var(--accent-green);
 }
 
 .navbar ul {
@@ -72,17 +84,17 @@ padding: 0 5rem ;
 .navbar ul li a {
     padding: 1rem 2rem;
     list-style-type: none;
-    color: var(--accent-coral);
+    color: var(--neutral-light);
     text-decoration: none;
     letter-spacing: 2px;
 }
 .navbar ul li a:hover {
     padding: 1rem 2rem;
     list-style-type: none;
-    color: var(--accent-coral);
+    
     text-decoration: none;
     letter-spacing: 2px;
-    background-color: var(--accent-yellow);
+    background-color: var(--accent-green);
     color: var(--neutral-navy);
     border-radius: 20px;
 }
@@ -92,7 +104,7 @@ padding: 0 5rem ;
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 justify-content: center;
 
 }
@@ -100,11 +112,11 @@ justify-content: center;
 .card {
     position: relative;
     overflow: hidden; /* required so the sliding bg stays inside */
-    border: 3px solid var(--primary-blue);
+   
     max-width: 300px;
     height: 400px;
     padding: 1rem;
-    background-color: var(--neutral-navy);
+    
     color: var(--neutral-light);
      background: rgba(15, 26, 42, 0.6);
     transition: color 0.3s ease, border-color 0.3s ease;
@@ -119,7 +131,7 @@ justify-content: center;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: var(--accent-yellow);
+    background-color: var(--accent-blue);
     transition: left 0.6s ease;
     z-index: 0;
 }
@@ -137,8 +149,8 @@ justify-content: center;
 
 /* text + border change when hovered */
 .card:hover {
-    border-color: var(--accent-yellow);
-    color: var(--neutral-navy);
+    border: 3px solid var(--accent-green);
+    color: var(--neutral-white);
 }
 
 
