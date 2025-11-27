@@ -37,6 +37,35 @@
 
 }
 
+.about {
+    color: var(--neutral-light);
+    max-width: 700px;
+    background-color: rgba(15, 26, 42, 0.6);
+    padding: 3rem;
+    border: 3px solid var(--neutral-light);
+    margin: 10rem auto;
+}
+
+.about p {
+    margin-bottom: 1rem;
+}
+
+.about ul li {
+    list-style-type: none;
+}
+
+.about h1 {
+    margin-bottom: 1rem;
+}
+hr {
+    border: none;            /* remove default border */
+    height: 1px;             /* thickness */
+    background-color: var(--accent-green); /* red line */
+   
+}
+
+
+
 body {
     background-color: var(--primary-gray);
     font-family: "Work Sans", sans-serif;
@@ -101,7 +130,7 @@ padding: 0 5rem ;
 
 .portfolio-container {
     max-width: 1300px;
-    margin: 30px auto;
+    margin: 10rem auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -149,7 +178,7 @@ justify-content: center;
 
 /* text + border change when hovered */
 .card:hover {
-    border: 3px solid var(--accent-green);
+    
     color: var(--neutral-white);
 }
 
