@@ -37,10 +37,19 @@
 
 }
 
+.wrapper {
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    background: url(/images/moon-9824889_1280.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .about {
     color: var(--neutral-light);
     max-width: 700px;
-    background-color: rgba(15, 26, 42, 0.6);
+    background-color: rgba(15, 26, 42, 0.9);
     padding: 3rem;
     border: 3px solid var(--neutral-light);
     margin: 10rem auto;
@@ -76,7 +85,7 @@ body {
 
 header {
 height: 100px;
-background-color: var(--accent-blue);
+background-color:rgba(15, 26, 42, 0.6) ;
 display: flex;
 justify-content: space-between;
 align-items: center;
