@@ -44,19 +44,7 @@
     
     overflow: hidden; /* hides overflowing video edges */
 }
-.bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    
-    z-index: -1;
-}
+
 
 .about {
     color: var(--neutral-light);
@@ -64,7 +52,7 @@
     background-color: rgba(15, 26, 42, 0.9);
     padding: 3rem;
     border: 3px solid var(--neutral-light);
-    margin: 10rem auto;
+    margin: 2rem auto;
 }
 
 .about p {
@@ -83,7 +71,7 @@
 
 
 body {
-    background-color: var(--primary-gray);
+    background-color: var(--neutral-white);
     font-family: "Work Sans", sans-serif;
     
     background-size: cover;
@@ -146,7 +134,7 @@ padding: 0 5rem ;
 
 .portfolio-container {
     max-width: 1300px;
-    margin: 10rem auto;
+    margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
